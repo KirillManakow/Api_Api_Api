@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddApi">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="837dp"
+        android:layout_height="1482dp"
+       android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#0B245E"
+        android:onClick="Add"
+        android:text="Добавить"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zenaAdd"
+        app:layout_constraintVertical_bias="0.251"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/otmAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0B245E"
+        android:text="Отмена"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zenaAdd"
+        app:layout_constraintVertical_bias="0.253"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="188dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:onClick="onClickChooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_playstore" />
+
+    <EditText
+        android:id="@+id/userAdd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Покупатель"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdd" />
+
+    <EditText
+        android:id="@+id/konfigurateAdd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Конфигурация"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAdd" />
+
+    <EditText
+        android:id="@+id/zenaAdd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Цена"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konfigurateAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

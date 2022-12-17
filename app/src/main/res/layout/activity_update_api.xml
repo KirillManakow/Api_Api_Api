@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateApi">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="837dp"
+        android:layout_height="1482dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#0B245E"
+        android:onClick="Update_click"
+        android:text="Обновить"
+
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zenaUpd"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/delButton"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#0B245E"
+
+        android:onClick="Delet_Click"
+        android:text="Удалить запись"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zenaUpd"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/otmUpd"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#0B245E"
+        android:text="Отмена"
+        android:textColor="@color/white"
+
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delButton"
+        app:layout_constraintVertical_bias="0.505"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageViewUpd"
+        android:layout_width="188dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="28dp"
+        android:clickable="false"
+        android:onClick="onClickChooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_playstore" />
+
+    <EditText
+
+        android:id="@+id/userUpd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_style"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Покупатель"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUpd" />
+
+    <EditText
+        android:id="@+id/konfigurateUpd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Конфигурация"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userUpd" />
+
+    <EditText
+        android:id="@+id/zenaUpd"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:hint="Цена"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konfigurateUpd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
